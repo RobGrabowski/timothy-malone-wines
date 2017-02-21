@@ -1,0 +1,174 @@
+
+.landing{
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400;
+}
+.container-fluid.yellow{
+    background-color: rgba(246,219,175,.5)
+}
+.col-lg-6.hero-left{
+    background-image: url(../assets/images/winepour.jpg);
+    min-height: 576px;
+    padding: 0;
+    
+}
+.hero-logo-container{
+    background-color: rgba(116,74,73,.85);
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 576px;
+    position: absolute;
+}
+.hero-logo{
+    color: rgba(246,219,175,1);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(50%);
+}
+.hero-logo h1{
+    font-family: 'Lora', serif;
+    font-size: 8em;
+    width: 20%;
+    margin: auto;
+}
+.hero-logo h2{
+    font-family: 'Crimson Text', serif;
+    font-size: 2.4em;
+    font-weight: 400;
+    letter-spacing: .94px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.flip{
+    -webkit-transform:rotate(-180deg);
+    -moz-transform:rotate(-180deg);
+    -o-transform:rotate(-180deg);
+    transform:rotate(-180deg);
+    ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+.col-lg-6.hero-right {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.links-container-right{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.links-container-right a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-right: 15px;
+    color: #020307;
+    letter-spacing: 1.02px;
+    text-transform: uppercase;
+}
+.intro-text, .vinyards-right{
+    letter-spacing: 1.02px;
+    line-height: 1.6;
+    padding-top: 30px;
+    width: 75%;
+}
+.intro-text p{
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+.intro-text button{
+    background-color: #744A49;
+    border: none;
+    color: rgba(246,219,175,1);
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.79px;
+}
+
+.wines-container{
+    background-image: url(../assets/images/corks.png);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+    padding-top: 100px;
+}
+
+.wines-container .wines-left, .vinyard-container .vinyards-left{
+    padding-left: 350px;
+}
+.wines-left h2, .vinyards-left h2 {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 2em;
+    letter-spacing: .8px;
+}
+.horizontal-line-red, .horizontal-line-red-vinyards{
+    width: 92px;
+    height: 8px;
+    background-color: #744A49;
+}
+.wines-container button{
+    background-color: #744A49;
+    border: none;
+    color: rgba(246,219,175,1);
+    padding: 30px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4em;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.62px;
+    width: 600px;
+    border: 2px solid rgb(246,219,175);
+    box-shadow: 0px 0px 0px 10px #744A49;
+}
+
+
+.vinyard-container{
+    background-image: url(../assets/images/vinyard.png);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+}
+.vinyard-container .layer {
+    background-color: rgba(2,3,7,.55);
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    position: relative;
+    padding-top: 100px;
+}
+.vinyards-left h2{
+    color: #fff;
+}
+.horizontal-line-red-vinyards{
+    width: 145px;
+}
+
+.vinyards-right p{
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    width: 60%;
+}

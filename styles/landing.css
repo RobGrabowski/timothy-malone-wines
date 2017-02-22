@@ -2,6 +2,7 @@
 .landing{
     font-family: 'Lato', sans-serif; 
     font-weight: 400;
+    color: #020307;
 }
 .container-fluid.yellow{
     background-color: rgba(246,219,175,.5)
@@ -51,7 +52,7 @@
     filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 .col-lg-6.hero-right {
-    padding-left: 60px;
+    padding-left: 100px;
     padding-right: 60px;
 }
 .links-container-right{
@@ -64,8 +65,18 @@
     font-size: 1.2em;
     padding-right: 15px;
     color: #020307;
-    letter-spacing: 1.02px;
+    letter-spacing: 1.62px;
     text-transform: uppercase;
+    text-decoration: none;
+}
+.links-container-right a:hover{
+     text-decoration: none;
+     color: #744A49;
+     
+}
+.links-container-right a:visited{
+    text-decoration: none;
+     color: #020307;
 }
 .intro-text, .vinyards-right{
     letter-spacing: 1.02px;
@@ -93,7 +104,49 @@
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     letter-spacing: 1.79px;
+    
+    max-width: 200px;
+    width: 100%;
+        
 }
+
+/* BEGIN BUTTON EFFECTS */
+
+.intro-text button:hover,
+.intro-text button:active {
+/*  letter-spacing: 4px;*/
+}
+
+.intro-text button:after,
+.intro-text button:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(246,219,175,0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.intro-text button:hover:after,
+.intro-text button:hover:before {
+  backface-visibility: hidden;
+  border-color: rgba(246,219,175,1);
+  transition: width 350ms ease-in-out;
+  width: 100%;
+/*    border: 1px solid rgba(246,219,175,1);*/
+/*    box-shadow: 1px 1px 1px rgba(246,219,175,1);*/
+}
+
+.intro-text button:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
+/* END BUTTON EFFECTS */
+
 
 .wines-container{
     background-image: url(../assets/images/corks.png);
@@ -104,10 +157,10 @@
     padding-top: 100px;
 }
 
-.wines-container .wines-left, .vinyard-container .vinyards-left{
+.wines-container .wines-left, .vinyard-container .vinyards-left, .purchase-container .purchase-left, .footer .footer-left{
     padding-left: 350px;
 }
-.wines-left h2, .vinyards-left h2 {
+.wines-left h2, .vinyards-left h2, .purchase-left h2 {
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -116,7 +169,7 @@
     font-size: 2em;
     letter-spacing: .8px;
 }
-.horizontal-line-red, .horizontal-line-red-vinyards{
+.horizontal-line-red, .horizontal-line-red-vinyards, .horizontal-line-red-purchase {
     width: 92px;
     height: 8px;
     background-color: #744A49;
@@ -148,7 +201,7 @@
     min-height: 700px;
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: 100% auto;
+    background-size: 115% auto;
 }
 .vinyard-container .layer {
     background-color: rgba(2,3,7,.55);
@@ -171,4 +224,86 @@
     color: #fff;
     font-size: 1.2em;
     width: 60%;
+}
+
+.purchase-container{
+    background-color: rgba(246,219,175,.5);
+    min-height: 800px;
+    
+}
+.purchase-left h2{
+    color: #020307
+}
+
+.horizontal-line-red-purchase{
+    width: 152px;
+}
+.purchase-container .layer{
+    padding-top: 100px;
+}
+.purchase-container .layer .purchase-right{
+    padding-top: 30px;
+    width: 60%;
+}
+.list-left {
+    float: left;
+    list-style-type: none;
+    letter-spacing: 1.02px;
+    line-height: 1.8;
+    font-size: 1.4em;
+}
+.wine-bottle-right{
+    float: right;
+}
+
+.footer {
+    background-color: #744A49;
+    height: 100px;
+    
+}
+.footer-left {
+    padding-top: 46px;
+}
+.footer-right {
+    padding-top: 20px;
+}
+.footer .footer-left a{
+    color: #F6DBAF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-right: 15px;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.footer-logo a{
+    color: rgba(246,219,175,1);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(50%);
+}
+.footer-logo a:hover{
+    color: rgba(246,219,175,1);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(50%);
+    text-decoration: none;
+}
+.footer-logo h1{
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    width: 20%;
+    margin: auto;
+}
+.footer-logo h2{
+    font-family: 'Crimson Text', serif;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: .94px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
 }

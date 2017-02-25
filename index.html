@@ -27,6 +27,20 @@
                       </div>
                     
                   </div>
+                  <div class="mobile-nav-2">
+                         <i class="fa fa-bars bars-2" aria-hidden="true"></i>
+                         
+
+                         <div class="responsive-menu-2">
+                            <ul>
+                                <li><a href="services.html" class="navbar-link">About</a></li>
+                                <li><a href="services.html" class="navbar-link">Wines</a></li>
+                                <li><a href="services.html" class="navbar-link">Vinyards</a></li>
+                                <li><a href="services.html" class="navbar-link">Purchase</a></li>
+                                <li><a href="services.html" class="navbar-link">Contact</a></li>    
+                            </ul>
+                         </div>
+                    </div>
               </div>
               <div class = "col-sm-6 col-lg-6 hero-right">
                   <div class="links-container-right">
@@ -39,7 +53,7 @@
                         
                     </div>
                     <div class="mobile-nav">
-                         <i class="fa fa-bars" aria-hidden="true"></i>
+                         <i class="fa fa-bars bars-1" aria-hidden="true"></i>
                          
 
                          <div class="responsive-menu">
@@ -72,7 +86,7 @@ We hope that you find our wines engaging and worthy of your dinner table.
          
         <div class = "container-fluid">
             <div class = "row">
-                <div class="wines-container">
+                <div class="wines-container .clearfix">
                     <div class="col-sm-12 col-lg-2 col-lg-offset-2 wines-left">
                         <h2>Wines</h2>
                         <div class="horizontal-line-red"></div>
@@ -91,13 +105,13 @@ We hope that you find our wines engaging and worthy of your dinner table.
          
          <div class = "container-fluid">
             <div class = "row">
-                <div class="vinyard-container">
+                <div class="vinyard-container .clearfix">
                     <div class="layer">
-                        <div class="col-sm-12 col-lg-4 vinyards-left">
+                        <div class="col-sm-12 col-md-12 col-lg-2 col-lg-offset-2 vinyards-left">
                             <h2>Vinyards</h2>
                             <div class="horizontal-line-red-vinyards"></div>
                         </div>
-                        <div class="col-lg-8 vinyards-right">
+                        <div class="col-sm-12 col-md-12 col-lg-8  vinyards-right">
                             <p>We currently source fruit from La Colina & La Sierra Vineyards of the Dundee Hills, Medici & Lia’s Vineyards of the Chehalem Mountains, Cancilla Vineyard of the Willamette Valley, and Garnier Vineyard of the Columbia Gorge.</p>
                             <p>La Colina is a beautiful Jory soil based site in southwestern Dundee, Oregon. Vines at this site were planted in 1999-2000. We currently are working with Wadenswil and Pommard clones planted on 3309 rootstock from blocks 10,12,13 & 14. La Colina is farmed and managed by George Hillberry.</p>
                             <p>Lia’s Vineyard is an extraordinary site around the Bald Peak section of Chehalem Mountain with a southern slope that ranges in elevation from 380-560ft. The soils are a mixture of Jory and Sedimentary and are home to a slew of interesting clones. We are currently working with 115, 777 & 828 clones of Pinot Noir from this vineyard. Lia’s vineyard is owned and managed by Todd Hansen and named after his cute cheerful daughter Lia.</p>
@@ -105,19 +119,21 @@ We hope that you find our wines engaging and worthy of your dinner table.
 
                         </div>
                     </div>    
-                </div>      
+                </div>
+                
             </div>
+             <div style="clear: both;"></div>
          </div>
          
          <div class = "container-fluid">
             <div class = "row">
                 <div class="purchase-container">
                     <div class="layer">
-                        <div class="col-sm-12 col-lg-4 purchase-left">
+                        <div class="col-sm-12 col-lg-2 col-lg-offset-2  purchase-left">
                             <h2>Purchase</h2>
                             <div class="horizontal-line-red-purchase"></div>
                         </div>
-                        <div class="col-lg-8 purchase-right">
+                        <div class="col-sm-12 col-md-6 col-lg-4 purchase-right">
                             <ul class="list-left">
                                 <li>Avalon Wine & Northwest-Wine</li>
                                 <li>Barrel Fine Wine</li>
@@ -135,8 +151,12 @@ We hope that you find our wines engaging and worthy of your dinner table.
                                 <li>Vinopolis Wine Shop</li>
                                 <li>World Foods Market</li>
                             </ul>
+                           
+                            
+                            
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 purchase-right">
                             <img class="wine-bottle-right" src="assets/images/voignier.png">
-
                         </div>
                     </div>    
                 </div>      
@@ -150,7 +170,7 @@ We hope that you find our wines engaging and worthy of your dinner table.
                 <div class="row"> 
                     <div class="footer"> 
 
-                        <div class="col-lg-8 footer-left">
+                        <div class="col-lg-6 col-lg-offset-2  footer-left">
                              <a href="services.html" class="navbar-link">About</a>
                              <a href="services.html" class="navbar-link">Wines</a>
                              <a href="services.html" class="navbar-link">Vinyards</a>
@@ -177,8 +197,12 @@ We hope that you find our wines engaging and worthy of your dinner table.
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script type="text/javascript">
             jQuery(function($){
-                     $( '.fa-bars' ).click(function(){
+                     $( '.bars-1' ).click(function(){
                      $('.responsive-menu').slideToggle(600);
+                     })
+                     
+                     $( '.bars-2' ).click(function(){
+                     $('.responsive-menu-2').slideToggle(600);
                      })
                 })
         </script>

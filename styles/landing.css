@@ -1,4 +1,8 @@
 
+body{
+    height: auto;
+    min-height: 100% !important;
+}
 .landing{
     font-family: 'Lato', sans-serif; 
     font-weight: 400;
@@ -88,10 +92,11 @@
     width: 95%;
     max-width: 1024px;
 }
-.mobile-nav{
+.mobile-nav, .mobile-nav-2{
     display: none;
 }
-.responsive-menu{
+
+.responsive-menu, .responsive-menu-2{
 	display: none;
     width: 50%;
     float: right;
@@ -107,13 +112,24 @@
      transition: all 2s ease-in-out;
 */
 }
-.responsive-menu a {
+.responsive-menu-2{
+    background-color: rgba(246,219,175,1);
+    position: relative;
+    width: 30%;
+}
+.responsive-menu-2 a{
+   color: rgba(116,74,73,1); 
+}
+.responsive-menu a, .responsive-menu-2 a{
     list-style: none;
     padding: 10px 0;
     font-size: .8em;
+    color: #020307;
+}
+.responsive-menu a{
     color: rgba(246,219,175,1);
 }
-.responsive-menu li{
+.responsive-menu li, .responsive-menu-2 li{
     list-style-type: none;
 }
 .intro-text p{
@@ -190,7 +206,7 @@
 }
 
  .vinyard-container .vinyards-left, .purchase-container .purchase-left, .footer .footer-left{
-    padding-left: 350px;
+/*    padding-left: 350px;*/
 }
 .wines-left h2, .vinyards-left h2, .purchase-left h2 {
     color: #fff;
@@ -233,7 +249,7 @@
     min-height: 700px;
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: 115% auto;
+    background-size: cover;
 }
 .vinyard-container .layer {
     background-color: rgba(2,3,7,.55);
@@ -243,6 +259,7 @@
     min-height: 700px;
     position: relative;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 .vinyards-left h2{
     color: #fff;
@@ -275,7 +292,9 @@
 }
 .purchase-container .layer .purchase-right{
     padding-top: 30px;
-    width: 60%;
+}
+.purchase-right img{
+    max-width: 100%;
 }
 .list-left {
     float: left;
@@ -285,7 +304,7 @@
     font-size: 1.4em;
 }
 .wine-bottle-right{
-    float: right;
+/*    float: right;*/
 }
 
 .footer {
@@ -340,9 +359,7 @@
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1350px){
-    
-}
+
 @media screen and (max-width:1024px) {
     .hero-logo h1 {
         width:45%;
@@ -367,12 +384,12 @@
     }
 }
 @media screen and (max-width:1113px) {
-    .mobile-nav {
+    .mobile-nav, .mobile-nav-2 {
         display: inline-block;
         width: 100%;
         font-size: 1.6em;
     }
-    .mobile-nav .fa-bars{
+    .mobile-nav .fa-bars, .mobile-nav-2 .bars-2{
         display: inline-block;
         float: right;
         padding-right: 20px;
@@ -382,8 +399,258 @@
     .links-container-right {
         display: none;  
     }
-    
+
+        
+}
+@media screen and (max-width:768px) {
+    .mobile-nav-2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.6em;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    .mobile-nav .fa-bars {
+        display: none !important;
+    }
+    .mobile-nav-2 .bars-2{
+        display: inline-block;
+        float: right;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .links-container-right {
+        display: none;  
+    }
+    .mobile-nav-2 .bars-2{
+        position: relative;
+        color: rgba(246,219,175,1);
+    }
+    .intro-text {
+        padding: 40px 0;
+    }
+    .intro-text button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        display: block;
+    }
+    .wines-left h2{
+        width: 95px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .horizontal-line-red, .horizontal-line-red-vinyards, .horizontal-line-red-purchase {
+        margin: auto;
+    }
+    .wines-container{
+        background-size: cover;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .wines-container button{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vinyard-container{
+        background-size: cover;
+        padding: 0;
+        position: relative;
+    }
+    .vinyard-container .layer{
+        position: relative;
+    }
+    .vinyard-container .vinyards-left, .purchase-container .purchase-left{
+        padding-left: 0px;
+    }
+    .vinyards-left h2{
+        width: 145px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vinyards-right p{
+        width: 80%;
+        margin: auto;
+    }
+    .purchase-left h2{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .purchase-container {
+        min-height: 1300px !important;
+    }
+    .purchase-container .layer .purchase-right{
+        width: auto;
+    }
+    .list-left{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-left: 0;
+    }
+    .wine-bottle-right{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: block;
+        padding-top: 40px;
+    }
+    .footer-left{
+        display: none;
+    }
+    .vinyard-container .vinyards-left, .purchase-container .purchase-left {
+        
+    }
         
 }
     
+@media screen and (max-width:726px) {
+/*
+    .background-image{
+        background-image: none;
+    }
+    .vinyard-container{
+        background-image: none;
+        background-color: rgba(2,3,7,.10);
+    }
+*/
+}
+@media screen and (max-width:1200px){
+/*
+    .mobile-nav-2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.6em;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .mobile-nav-2 .bars-2{
+        display: inline-block;
+        float: right;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+*/
+    .mobile-nav, .mobile-nav-2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.6em;
+    }
+    .mobile-nav .fa-bars, .mobile-nav-2 .bars-2{
+        display: inline-block;
+        float: right;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .links-container-right {
+        display: none;  
+    }
+
+/*
+    .mobile-nav-2 .bars-2{
+        position: relative;
+        color: rgba(246,219,175,1);
+    }
+*/
+    .intro-text {
+        padding: 40px 0;
+    }
+    .intro-text button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        display: block;
+    }
+    .wines-left h2{
+        width: 95px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .horizontal-line-red, .horizontal-line-red-vinyards, .horizontal-line-red-purchase {
+        margin: auto;
+    }
+    .wines-container{
+        background-size: cover;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .wines-container button{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vinyard-container .vinyards-left, .purchase-container .purchase-left{
+        padding-left: 0px !important;
+    }
+    .vinyards-left h2{
+        width: 145px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vinyards-right p{
+        width: 80%;
+        margin: auto;
+    }
+    .purchase-left h2{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+/*
+    .purchase-container .layer .purchase-right{
+        width: auto;
+    }
+*/
+    .list-left{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-left: 0;
+    }
+    .wine-bottle-right{
+       
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: block;
+        padding-left: 10px;
+    }
+    .footer-left{
+        display: none;
+    }
+}
+@media screen and (max-width:1500px){
+    .vinyard-container .vinyards-left, .purchase-container .purchase-left{
+/*        padding-left: 20%;*/
+    }
+    .vinyards-left h2{
+        width: 145px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vinyards-right p{
+        width: 80%;
+        margin: auto;
+    }
+    .horizontal-line-red-vinyards{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 991px){
+    .purchase-container {
+        min-height: 1400px;
+    }
 }
